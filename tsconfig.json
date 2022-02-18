@@ -9,9 +9,5 @@
     "allowJs": true,
     "jsx": "react"
   },
-  "files": [
-    "src/office-party/index.ts",
-    "src/pixelator/index.tsx",
-    "src/global.d.ts"
-  ]
+  "files": ["src/app/index.tsx", "src/office-party/index.ts", "src/pixelator/index.tsx", "src/global.d.ts"]
 }

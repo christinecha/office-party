@@ -9,7 +9,7 @@ const isProduction = process.env.NODE_ENV == "production";
 
 const config = {
   entry: {
-    "office-party": "./src/office-party/index.ts",
+    app: "./src/app/index.tsx",
     pixelator: "./src/pixelator/index.tsx",
   },
   output: {
@@ -23,7 +23,7 @@ const config = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "index.html",
-      chunks: ["office-party"],
+      chunks: ["app"],
     }),
 
     new HtmlWebpackPlugin({
@@ -54,12 +54,17 @@ const config = {
         ],
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+        test: /\.(eot|ttf|woff|woff2|png|jpg|gif)$/i,
         type: "asset",
       },
-
-      // Add your rules for custom modules here
-      // Learn more about loaders from https://webpack.js.org/loaders/
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: "@svgr/webpack",
+          },
+        ],
+      },
     ],
   },
   resolve: {

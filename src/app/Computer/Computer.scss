@@ -1,0 +1,12 @@
+.computer {
+  display: inline-flex;
+  position: relative;
+  cursor: pointer;
+
+  .screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+  }
+}

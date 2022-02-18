@@ -1,0 +1,61 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.office {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  --pine1: #e6ceaf;
+
+  --outlineColor: #000;
+  --deskTopColor1: var(--pine1);
+  --chairColor1: #9fbcdb;
+  --chairColor2: #fff;
+
+  .wall {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    .behind-desk {
+      position: absolute;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .desk {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .floor {
+    position: relative;
+    z-index: 0;
+    flex: 1;
+    width: 100%;
+    background-color: #332b2b;
+    border-top: 2px solid var(--outlineColor);
+    margin-top: -100px;
+  }
+}

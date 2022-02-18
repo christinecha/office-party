@@ -1,0 +1,18 @@
+.desk {
+  display: inline-flex;
+  flex-direction: column;
+
+  .desk-items {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .top {
+    display: inline-flex;
+  }
+
+  .legs {
+    display: flex;
+    justify-content: space-between;
+  }
+}
