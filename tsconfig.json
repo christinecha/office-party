@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "jsx": "react"
+  },
+  "files": [
+    "src/office-party/index.ts",
+    "src/pixelator/index.tsx",
+    "src/global.d.ts"
+  ]
+}

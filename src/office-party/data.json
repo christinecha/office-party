@@ -1,0 +1,12 @@
+[
+  {
+    "id": "desk_top",
+    "texture": "wood",
+    "theme": "oak"
+  },
+  {
+    "id": "desk_legs",
+    "texture": "angled-wood",
+    "theme": "oak"
+  }
+]

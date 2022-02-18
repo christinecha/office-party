@@ -1,0 +1,66 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.pixelator {
+  display: flex;
+  padding: 20px;
+}
+
+.colors {
+  position: relative;
+  margin-right: 15px;
+  min-height: 500px;
+
+  .chrome-picker {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.color {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+
+  &:last-child {
+    .preview {
+      border: 1px solid #ddd;
+    }
+  }
+
+  &[data-is-selected="true"] .preview {
+    border: 1px solid black;
+    z-index: 1;
+  }
+
+  .preview {
+    width: 24px;
+    height: 24px;
+    margin: -1px;
+    border: 1px solid currentColor;
+  }
+
+  button {
+    margin-left: 10px;
+  }
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+}
+
+canvas {
+  border: 1px solid #ddd;
+}
+
+.log {
+  width: 100%;
+  overflow-wrap: break-word;
+  font-family: monospace;
+  font-size: 10px;
+  line-height: 0.8;
+}
